@@ -1,0 +1,21 @@
+/* Set the font family and size for all paragraphs */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Change the background color of all headings */
+  h1, h2, h3 {
+    background-color: lightgray;
+  }
+  
+  /* Center align all images */
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Add a border to all links on hover */
+  a:hover {
+    border: 1px solid blue;
+  }

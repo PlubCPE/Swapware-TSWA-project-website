@@ -1,25 +1,29 @@
-import React from 'react';
+import { FC,useState,useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
-function App() {
+//components
+import Header from './Components/Header';
+import MemberProfile from './Components/MemberProfile';
+
+const App : FC = () => {
+  const [isDarkMode,setIsDarkMode] = useState(false);
+  
+  
+    /*toggle dark mode Button*/
+  // const toggleDarkMode = () =>{
+  //   setIsDarkMode(!isDarkMode);
+  //    var elemment = document.body;
+  //    elemment.dataset.bsTheme = elemment.dataset.bsTheme == "light" ? 'dark' : 'light';
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+     {/*about Project*/} 
+   
+    </>
   );
 }
 
